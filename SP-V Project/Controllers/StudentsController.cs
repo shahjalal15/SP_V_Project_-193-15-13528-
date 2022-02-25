@@ -59,6 +59,7 @@ namespace SP_V_Project.Controllers
         {
             if (ModelState.IsValid)
             {
+                student.Age = ageCalculator(student.BirthDate);
                 _context.Add(student);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -98,6 +99,7 @@ namespace SP_V_Project.Controllers
             {
                 try
                 {
+                    student.Age = ageCalculator(student.BirthDate);
                     _context.Update(student);
                     await _context.SaveChangesAsync();
                 }
@@ -150,5 +152,20 @@ namespace SP_V_Project.Controllers
         {
             return _context.Students.Any(e => e.Id == id);
         }
+        private int ageCalculator(string data)
+        {
+            string[] BirthDateSplitted = data.Split("/");
+            string[] CurrentDateSplitted = DateTime.Now.ToString("d-M-yyyy").Split("-");
+            int age = Int16.Parse(CurrentDateSplitted[2]) - Int16.Parse(BirthDateSplitted[2]);
+            bool decrease = false;
+            if (Int16.Parse(CurrentDateSplitted[1]) < Int16.Parse(BirthDateSplitted[1])) { decrease = true; }
+            if (Int16.Parse(CurrentDateSplitted[1]) == Int16.Parse(BirthDateSplitted[1]))
+            {
+                if (Int16.Parse(CurrentDateSplitted[0]) < Int16.Parse(BirthDateSplitted[0])) { decrease = true; }
+            }
+            if (decrease) { age -= 1; }
+            return age;
+        }
+
     }
 }

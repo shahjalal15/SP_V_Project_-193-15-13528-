@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHAHJALAL\\source\\repos\\SP-V Project\\SP-V Project\\SP-V Project.csproj": {}
+    "G:\\Software Project V\\SP-V Project _(193-15-13528)\\SP-V Project\\SP-V Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHAHJALAL\\source\\repos\\SP-V Project\\SP-V Project\\SP-V Project.csproj": {
+    "G:\\Software Project V\\SP-V Project _(193-15-13528)\\SP-V Project\\SP-V Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHAHJALAL\\source\\repos\\SP-V Project\\SP-V Project\\SP-V Project.csproj",
+        "projectUniqueName": "G:\\Software Project V\\SP-V Project _(193-15-13528)\\SP-V Project\\SP-V Project.csproj",
         "projectName": "SP-V Project",
-        "projectPath": "C:\\Users\\SHAHJALAL\\source\\repos\\SP-V Project\\SP-V Project\\SP-V Project.csproj",
+        "projectPath": "G:\\Software Project V\\SP-V Project _(193-15-13528)\\SP-V Project\\SP-V Project.csproj",
         "packagesPath": "C:\\Users\\SHAHJALAL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHAHJALAL\\source\\repos\\SP-V Project\\SP-V Project\\obj\\",
+        "outputPath": "G:\\Software Project V\\SP-V Project _(193-15-13528)\\SP-V Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
